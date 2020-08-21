@@ -21,6 +21,7 @@ I'm running all of this on Debian 10.
 * htop
 * firefox
 * maim
+* gotop
 
 ## Installation
 * (it may be easier to install dwm via package management first, to register it with you display manager/login tool)

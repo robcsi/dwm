@@ -135,7 +135,7 @@ static Key keys[] = {
 	/* { MODKEY,			XK_e,		spawn,		SHCMD("alacritty -e neomutt ; pkill -RTMIN+12 dwmblocks; rmdir ~/.abook") }, */
 	/* { MODKEY|ShiftMask,		XK_e,		spawn,		SHCMD("alacritty -e abook -C ~/.config/abook/abookrc --datafile ~/.config/abook/addressbook") }, */
 	{ MODKEY,			XK_r,		spawn,		SHCMD("alacritty -e vifm") },
-	{ MODKEY|ShiftMask,		XK_r,		spawn,		SHCMD("alacritty -e htop") },
+	{ MODKEY|ShiftMask,		XK_r,		spawn,		SHCMD("alacritty -e gotop") },
 	{ MODKEY,			XK_t,		setlayout,	{.v = &layouts[0]} }, /* tile */
 	{ MODKEY|ShiftMask,		XK_t,		setlayout,	{.v = &layouts[1]} }, /* bstack */
 	{ MODKEY,			XK_y,		setlayout,	{.v = &layouts[2]} }, /* spiral */
@@ -247,7 +247,7 @@ static Key keys[] = {
 	{ 0, XF86XK_WWW,		spawn,		SHCMD("firefox") },
 	{ 0, XF86XK_DOS,		spawn,		SHCMD("alacritty") },
 	{ 0, XF86XK_ScreenSaver,	spawn,		SHCMD("slock & xset dpms force off; mpc pause; pauseallmpv") },
-	{ 0, XF86XK_TaskPane,		spawn,		SHCMD("alacritty -e htop") },
+	{ 0, XF86XK_TaskPane,		spawn,		SHCMD("alacritty -e gotop") },
 	{ 0, XF86XK_Mail,		spawn,		SHCMD("alacritty -e neomutt ; pkill -RTMIN+12 dwmblocks") },
 	{ 0, XF86XK_MyComputer,		spawn,		SHCMD("alacritty -e vifm / .") },
 	/* { 0, XF86XK_Battery,		spawn,		SHCMD("") }, */
