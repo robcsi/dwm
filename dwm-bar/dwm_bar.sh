@@ -28,6 +28,19 @@ export SEP2=" "
 . "$DIR/bar-functions/dwm_networkmanager.sh"
 . "$DIR/bar-functions/dwm_loadavg.sh"
 . "$DIR/bar-functions/dwm_date.sh"
+. "$DIR/bar-functions/dwm_updates.sh"
+
+# Update some data only hourly
+while true
+do
+    dwm_weather > /tmp/dwm_weather_data.txt
+    #chmod 777 /tmp/dwm_weather_data.txt
+    dwm_updates > /tmp/dwm_updates_data.txt
+    #chmod 777 /tmp/dwm_updates_data.txt
+
+    sleep 3600s
+    
+done &
 
 # Update dwm status bar every second
 while true
@@ -35,14 +48,15 @@ do
 
     # Append results of each func one by one to a string
     dispstr=""
-    dispstr="$dispstr$(dwm_weather)"
+    dispstr="$dispstr$(cat /tmp/dwm_updates_data.txt)"
+    dispstr="$dispstr$(cat /tmp/dwm_weather_data.txt)"
     dispstr="$dispstr$(dwm_networkmanager)"
     dispstr="$dispstr$(dwm_loadavg)"
     dispstr="$dispstr$(dwm_alsa)"
-    dispstr="$dispstr$(dwm_date)"
     dispstr="$dispstr$(dwm_battery)"
+    dispstr="$dispstr$(dwm_date)"
 
     xsetroot -name "$dispstr"
     sleep 1
 
-done
+done &
