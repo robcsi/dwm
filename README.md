@@ -6,10 +6,20 @@ Also contains an autostart script and other scripts for a custom dwm-bar build.
 
 I'm running all of this on Debian 10.
 
-## Requirements
+## Requirements/dependencies
 
-* libxcb-res0-dev (sudo apt install it). Without this libraray you will get a xcb/res.h not found error, because some of the applied dwm patches.
-* sudo apt install compton (optional)
+* libxcb-res0-dev (sudo apt install it). Without this librray you will get a xcb/res.h not found error, because some of the applied dwm patches.
+
+### Other tools used by the setup
+
+* compton (optional)
+* alacritty terminal
+* dmenu
+* rofi
+* vifm
+* htop
+* firefox
+* maim
 
 ## Installation
 * (it may be good to install dwm via package management first, to register it with you display manager/login tool)

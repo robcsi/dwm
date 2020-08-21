@@ -188,7 +188,7 @@ static Key keys[] = {
 	/* V is automatically bound above in STACKKEYS */
 	{ MODKEY,			XK_Tab,		togglebar,	{0} },
 	/* { MODKEY|ShiftMask,		XK_b,		spawn,		SHCMD("") }, */
-	/* { MODKEY,			XK_n,		spawn,		SHCMD("alacritty -e nvim -c VimwikiIndex") }, */
+	/* { MODKEY,			XK_n,		spawn,		SHCMD("alacritty -e vim -c VimwikiIndex") }, */
 	/* { MODKEY|ShiftMask,		XK_n,		spawn,		SHCMD("alacritty -e newsboat; pkill -RTMIN+6 dwmblocks") }, */
 	/* { MODKEY,			XK_m,		spawn,		SHCMD("alacritty -e ncmpcpp") }, */
 	/* { MODKEY|ShiftMask,		XK_m,		spawn,		SHCMD("pamixer -t; kill -44 $(pidof dwmblocks)") }, */
@@ -209,17 +209,17 @@ static Key keys[] = {
 	{ MODKEY,			XK_Insert,	spawn,		SHCMD("notify-send \"📋 Clipboard contents:\" \"$(xclip -o -selection clipboard)\"") },
 
 	{ MODKEY,			XK_F1,		spawn,		SHCMD("groff -mom /usr/local/share/dwm/larbs.mom -Tpdf | zathura -") },
-	{ MODKEY,			XK_F2,		spawn,		SHCMD("tutorialvids") },
-	{ MODKEY,			XK_F3,		spawn,		SHCMD("displayselect") },
+	//{ MODKEY,			XK_F2,		spawn,		SHCMD("tutorialvids") },
+	//{ MODKEY,			XK_F3,		spawn,		SHCMD("displayselect") },
 	/* { MODKEY,			XK_F4,		spawn,		SHCMD("alacritty -e pulsemixer; kill -44 $(pidof dwmblocks)") }, */
-	{ MODKEY,			XK_F5,		xrdb,		{.v = NULL } },
-	{ MODKEY,			XK_F6,		spawn,		SHCMD("torwrap") },
-	{ MODKEY,			XK_F7,		spawn,		SHCMD("td-toggle") },
+	//{ MODKEY,			XK_F5,		xrdb,		{.v = NULL } },
+	//{ MODKEY,			XK_F6,		spawn,		SHCMD("torwrap") },
+	//{ MODKEY,			XK_F7,		spawn,		SHCMD("td-toggle") },
 	/* { MODKEY,			XK_F8,		spawn,		SHCMD("mailsync") }, */
 	/* { MODKEY,			XK_F9,		spawn,		SHCMD("dmenumount") }, */
 	/* { MODKEY,			XK_F10,		spawn,		SHCMD("dmenuumount") }, */
 	/* { MODKEY,			XK_F11,		spawn,		SHCMD("mpv --no-cache --no-osc --no-input-default-bindings --input-conf=/dev/null --title=webcam $(ls /dev/video[0,2,4,6,8] | tail -n 1)") }, */
-	{ MODKEY,			XK_F12,		xrdb,		{.v = NULL } },
+	//{ MODKEY,			XK_F12,		xrdb,		{.v = NULL } },
 	{ MODKEY,			XK_space,	zoom,		{0} },
 	/* { MODKEY|ShiftMask,		XK_space,	togglefloating,	{0} }, */
 
@@ -244,7 +244,7 @@ static Key keys[] = {
 	{ 0, XF86XK_PowerOff,		spawn,		SHCMD("sysact") },
 	{ 0, XF86XK_Calculator,		spawn,		SHCMD("alacritty -e bc -l") },
 	{ 0, XF86XK_Sleep,		spawn,		SHCMD("sudo -A zzz") },
-	{ 0, XF86XK_WWW,		spawn,		SHCMD("$BROWSER") },
+	{ 0, XF86XK_WWW,		spawn,		SHCMD("firefox") },
 	{ 0, XF86XK_DOS,		spawn,		SHCMD("alacritty") },
 	{ 0, XF86XK_ScreenSaver,	spawn,		SHCMD("slock & xset dpms force off; mpc pause; pauseallmpv") },
 	{ 0, XF86XK_TaskPane,		spawn,		SHCMD("alacritty -e htop") },
@@ -288,7 +288,7 @@ static Button buttons[] = {
 	{ ClkStatusText,        0,              Button4,        sigdwmblocks,   {.i = 4} },
 	{ ClkStatusText,        0,              Button5,        sigdwmblocks,   {.i = 5} },
 	{ ClkStatusText,        ShiftMask,      Button1,        sigdwmblocks,   {.i = 6} },
-	{ ClkStatusText,        ShiftMask,      Button3,        spawn,          SHCMD("alacritty -e nvim ~/.local/src/dwmblocks/config.h") },
+	{ ClkStatusText,        ShiftMask,      Button3,        spawn,          SHCMD("alacritty -e vim ~/.local/src/dwmblocks/config.h") },
 	{ ClkClientWin,         MODKEY,         Button1,        movemouse,      {0} },
 	{ ClkClientWin,         MODKEY,         Button2,        defaultgaps,	{0} },
 	{ ClkClientWin,         MODKEY,         Button3,        resizemouse,    {0} },
