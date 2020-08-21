@@ -9,6 +9,7 @@ I'm running all of this on Debian 10.
 ## Requirements/dependencies
 
 * libxcb-res0-dev (sudo apt install it). Without this librray you will get a xcb/res.h not found error, because some of the applied dwm patches.
+* for other dependencies please check the official dwm installation docs.
 
 ### Other tools used by the setup
 
