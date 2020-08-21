@@ -23,13 +23,13 @@ I'm running all of this on Debian 10.
 * maim
 
 ## Installation
-* (it may be good to install dwm via package management first, to register it with you display manager/login tool)
+* (it may be easier to install dwm via package management first, to register it with you display manager/login tool)
 * clone
-* put files where you want
-* put autostart.sh into ~/.dwm directory
+* put autostart.sh into ~/.dwm directory (its path is currently hard coded in dwm.c for simplicity/autostart patch)
 * change path in autostart.sh to dwm_bar.sh location
 * chmod +x all .sh files
 * cd dwm/dwm && make && sudo make install
+* logout, login and dwm should start automatically
 
 ## Credits
 Thanks goes to Luke Smith and Joe Standring and others from whom all this was copied and is based on.
