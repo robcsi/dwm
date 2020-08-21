@@ -34,9 +34,7 @@ export SEP2=" "
 while true
 do
     dwm_weather > /tmp/dwm_weather_data.txt
-    #chmod 777 /tmp/dwm_weather_data.txt
     dwm_updates > /tmp/dwm_updates_data.txt
-    #chmod 777 /tmp/dwm_updates_data.txt
 
     sleep 3600s
     
