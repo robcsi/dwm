@@ -289,7 +289,8 @@ static Key keys[] = {
 	{ MODKEY|ControlMask, XK_m,         toggleverticalmax,   {0} },
 	{ MODKEY,           XK_m,           togglemaximize,      {0} },
 
-	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
+	{ MODKEY|ShiftMask,		    XK_q,      quit,           {0} },
+	{ MODKEY|ControlMask,		    XK_o,      winview,        {0} },
 };
 
 /* button definitions */
