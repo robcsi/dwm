@@ -110,7 +110,7 @@ static Key keys[] = {
 	STACKKEYS(MODKEY,                          focus)
 	STACKKEYS(MODKEY|ShiftMask,                push)
 	/* { MODKEY|ShiftMask,		XK_Escape,	spawn,	SHCMD("") }, */
-	{ MODKEY,			XK_grave,	spawn,	SHCMD("dmenuunicode") },
+	//{ MODKEY,			XK_grave,	spawn,	SHCMD("dmenuunicode") },
 	/* { MODKEY|ShiftMask,		XK_grave,	togglescratch,	SHCMD("") }, */
 	TAGKEYS(			XK_1,		0)
 	TAGKEYS(			XK_2,		1)
@@ -136,7 +136,7 @@ static Key keys[] = {
 	/* { MODKEY|ShiftMask,		XK_q,		spawn,		SHCMD("sysact") }, */
 	{ MODKEY,			XK_w,		spawn,		SHCMD("firefox") },
 	/* { MODKEY|ShiftMask,		XK_w,		spawn,		SHCMD("alacritty -e sudo nmtui") }, */
-	/* { MODKEY,			XK_e,		spawn,		SHCMD("alacritty -e neomutt ; pkill -RTMIN+12 dwmblocks; rmdir ~/.abook") }, */
+	{ MODKEY,			XK_e,		spawn,		SHCMD("caja") },
 	/* { MODKEY|ShiftMask,		XK_e,		spawn,		SHCMD("alacritty -e abook -C ~/.config/abook/abookrc --datafile ~/.config/abook/addressbook") }, */
 	{ MODKEY,			XK_r,		spawn,		SHCMD("alacritty -e vifm") },
 	{ MODKEY|ShiftMask,		XK_r,		spawn,		SHCMD("alacritty -e gotop") },
@@ -174,7 +174,7 @@ static Key keys[] = {
 	{ MODKEY,			XK_h,		setmfact,	{.f = -0.05} },
 	/* J and K are automatically bound above in STACKEYS */
 	{ MODKEY,			XK_l,		setmfact,      	{.f = +0.05} },
-	{ MODKEY|ShiftMask,		XK_l,	spawn,		SHCMD("slock") },
+	{ MODKEY|ShiftMask,		XK_l,	spawn,		SHCMD("i3lock --color 3F3F3F") },
 	{ MODKEY,			XK_n,	shiftview,	{ .i = 1 } },
 	{ MODKEY|ShiftMask,		XK_n,	shifttag,	{ .i = 1 } },
 	/* { MODKEY,			XK_apostrophe,	togglescratch,	{.ui = 1} }, */

@@ -23,9 +23,7 @@ export SEP2=" "
 
 # Import the modules
 . "$DIR/bar-functions/dwm_battery.sh"
-. "$DIR/bar-functions/dwm_alsa.sh"
 . "$DIR/bar-functions/dwm_weather.sh"
-. "$DIR/bar-functions/dwm_networkmanager.sh"
 . "$DIR/bar-functions/dwm_loadavg.sh"
 . "$DIR/bar-functions/dwm_date.sh"
 . "$DIR/bar-functions/dwm_updates.sh"
@@ -48,9 +46,7 @@ do
     dispstr=""
     dispstr="$dispstr$(cat /tmp/dwm_updates_data.txt)"
     dispstr="$dispstr$(cat /tmp/dwm_weather_data.txt)"
-    dispstr="$dispstr$(dwm_networkmanager)"
     dispstr="$dispstr$(dwm_loadavg)"
-    dispstr="$dispstr$(dwm_alsa)"
     dispstr="$dispstr$(dwm_battery)"
     dispstr="$dispstr$(dwm_date)"
 
