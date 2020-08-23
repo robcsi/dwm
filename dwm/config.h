@@ -105,6 +105,8 @@ static const char *termcmd[]  = { "alacritty", NULL };
 
 #include <X11/XF86keysym.h>
 #include "shiftview.c"
+#include "maximize.c"
+
 static Key keys[] = {
 	/* modifier                     key        function        argument */
 	STACKKEYS(MODKEY,                          focus)
@@ -277,6 +279,10 @@ static Key keys[] = {
 	/* { MODKEY|Mod4Mask,              XK_o,      incrohgaps,     {.i = -1 } }, */
 	/* { MODKEY|ShiftMask,             XK_y,      incrovgaps,     {.i = +1 } }, */
 	/* { MODKEY|ShiftMask,             XK_o,      incrovgaps,     {.i = -1 } }, */
+
+	{ MODKEY|ShiftMask, XK_m,           togglehorizontalmax, {0}  },
+	{ MODKEY|ControlMask, XK_m,         toggleverticalmax,   {0} },
+	{ MODKEY,           XK_m,           togglemaximize,      {0} },
 
 	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
 };
