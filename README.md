@@ -15,7 +15,7 @@ For used patches, see [this file](./patches).
 
 ### Other tools used by the setup
 
-* compton (optional)
+* compton
 * alacritty terminal
 * dmenu
 * rofi
