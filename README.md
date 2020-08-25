@@ -6,6 +6,8 @@ Also contains an autostart script and other scripts for a custom dwm-bar build.
 
 I'm running all of this on Debian 10.
 
+For used patches, see [this file](./patches).
+
 ## Requirements/dependencies
 
 * libxcb-res0-dev (sudo apt install it). Without this librray you will get a xcb/res.h not found error, because some of the applied dwm patches.
@@ -22,6 +24,13 @@ I'm running all of this on Debian 10.
 * firefox
 * maim
 * gotop
+* nitrogen
+* artha
+* orage
+* nm-applet
+* mate-volume-control-applet
+* mate-power-manager
+* dunst
 
 ## Installation
 * (it may be easier to install dwm via package management first, to register it with you display manager/login tool)
