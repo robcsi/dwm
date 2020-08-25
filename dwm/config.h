@@ -291,6 +291,7 @@ static Key keys[] = {
 
 	{ MODKEY|ShiftMask,		    XK_q,      quit,           {0} },
 	{ MODKEY|ControlMask,		    XK_o,      winview,        {0} },
+	{ MODKEY|ControlMask|ShiftMask,	    XK_q,      quit,           {1} }, 
 };
 
 /* button definitions */

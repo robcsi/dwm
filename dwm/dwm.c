@@ -277,6 +277,8 @@ static void setup(void);
 static void seturgent(Client *c, int urg);
 static void showhide(Client *c);
 static void sigchld(int unused);
+static void sighup(int unused);
+static void sigterm(int unused);
 static void sigdwmblocks(const Arg *arg);
 static void sighup(int unused);
 static void sigterm(int unused);
@@ -1976,6 +1978,9 @@ setup(void)
 
 	/* clean up any zombies immediately */
 	sigchld(0);
+
+	signal(SIGHUP, sighup);
+	signal(SIGTERM, sigterm);
 
 	signal(SIGHUP, sighup);
 	signal(SIGTERM, sigterm);
