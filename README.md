@@ -2,7 +2,8 @@
 
 Personal build of the dwm tiling window manager based on Luke Smith's and others' builds.
 
-Also contains an autostart script and other scripts for a custom dwm-bar, dwm-status build (see links to them below).
+Also contains an autostart script and other scripts for a custom dwm-bar, dwm-status, dwmbar build (see links to them below).
+You can choose status bar implementation to your liking.
 
 I'm running all of this on Debian 10.
 
@@ -50,3 +51,4 @@ Thanks goes to authors of tools mentioned below.
 * [LARBS](https://larbs.xyz/)
 * [dwm-bar](https://github.com/joestandring/dwm-bar)
 * [dwm-status](https://github.com/s1n7ax/dwm-status)
+* [dwmbar](https://github.com/Alexx2/dwmbar)
