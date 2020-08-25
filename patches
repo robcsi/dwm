@@ -1,8 +1,9 @@
- 1345  patch -p1 < dwm-systray-20200610-f09418b.diff 
- 1408  patch -p1 < dwm-fakefullscreen-20170508-ceac8c9.diff 
- 1424  patch -p1 < dwm-maximize_vert_horz-20160731-56a31dc.diff 
- 1444  patch -p1 < dwm-maximize_vert_horz-6.1.diff 
- 1483  patch -p1 < dwm-gridmode-20170909-ceac8c9.diff 
- 1501  patch -p1 < dwm-pertag-6.2.diff 
- 1514  patch -p1 < dwm-6.0-winview.diff 
- 1991  patch -p1 < dwm-restartsig-20180523-6.2.diff 
+ 1147  patch -p1 < dwm-systray-20200610-f09418b.diff 
+ 1210  patch -p1 < dwm-fakefullscreen-20170508-ceac8c9.diff 
+ 1226  patch -p1 < dwm-maximize_vert_horz-20160731-56a31dc.diff 
+ 1246  patch -p1 < dwm-maximize_vert_horz-6.1.diff 
+ 1285  patch -p1 < dwm-gridmode-20170909-ceac8c9.diff 
+ 1303  patch -p1 < dwm-pertag-6.2.diff 
+ 1316  patch -p1 < dwm-6.0-winview.diff 
+ 1793  patch -p1 < dwm-restartsig-20180523-6.2.diff 
+ 1996  patch -p1 < dwm-statuspadding-20150524-c8e9479.diff 
