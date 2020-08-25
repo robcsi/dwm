@@ -34,11 +34,13 @@ For used patches, see [this file](./patches).
 * dunst
 
 ## Installation
+
 * (it may be easier to install dwm via package management first, to register it with you display manager/login tool)
 * clone
+* choose and build one of the status bar implementations, if needed
 * put autostart.sh into ~/.dwm directory (its path is currently hard coded in dwm.c for simplicity/autostart patch)
-* change path in autostart.sh to dwm_bar.sh location
-* chmod +x all .sh files
+* change path in autostart.sh to the location of whichever status bar you'd like to use
+* chmod +x all executable (.sh, .py, etc.) files
 * cd dwm/dwm && make && sudo make install
 * logout, login and dwm should start automatically
 
