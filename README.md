@@ -2,7 +2,7 @@
 
 Personal build of the dwm tiling window manager based on Luke Smith's and others' builds.
 
-Also contains an autostart script and other scripts for a custom dwm-bar build.
+Also contains an autostart script and other scripts for a custom dwm-bar, dwm-status build (see links to them below).
 
 I'm running all of this on Debian 10.
 
@@ -42,5 +42,11 @@ For used patches, see [this file](./patches).
 * logout, login and dwm should start automatically
 
 ## Credits
-Thanks goes to Luke Smith and Joe Standring and others from whom all this was copied and is based on.
 
+Thanks goes to authors of tools mentioned below.
+
+## Links
+
+* [LARBS](https://larbs.xyz/)
+* [dwm-bar](https://github.com/joestandring/dwm-bar)
+* [dwm-status](https://github.com/s1n7ax/dwm-status)

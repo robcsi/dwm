@@ -1,7 +1,8 @@
 #!/bin/sh
 
 killall -q dwm_bar.sh
-/home/robcsi/git/dwm/dwm-bar/dwm_bar.sh &
+#/home/robcsi/git/dwm/dwm-bar/dwm_bar.sh &
+/home/robcsi/git/dwm/dwm-status/dwm_status.py &
 compton &
 nm-applet &
 artha &
