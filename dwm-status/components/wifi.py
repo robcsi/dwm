@@ -12,7 +12,7 @@ class Wifi:
 
     def get_details(self):
         try:
-            ssid = execute([["iwgetid", "-r"]])
+            ssid = execute([["/usr/sbin/iwgetid", "-r"]])
         except CalledProcessError:
             ssid = 'not connected'
         

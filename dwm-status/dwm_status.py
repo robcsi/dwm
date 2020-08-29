@@ -21,7 +21,7 @@ status_list = [
     Memory(),
     Storage(),
     # Volume(),
-    # Wifi(), #WIP
+    Wifi(), #WIP
     Weather("Cluj-Napoca"), 
     DateTime(),
 ]
