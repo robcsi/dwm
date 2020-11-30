@@ -105,6 +105,7 @@ static const Layout layouts[] = {
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "dmenu_run", "-p", "Run: ", "-m", dmenumon, "-fn", dmenufont, "-nb", normbgcolor, "-nf", normfgcolor, "-sb", selbgcolor, "-sf", selfgcolor, NULL };
 static const char *termcmd[]  = { "st", NULL };
+static const char *ytopcmd[]  = { "st", "-e", "htop", NULL };
 
 #include <X11/XF86keysym.h>
 #include "shiftview.c"
@@ -128,12 +129,12 @@ static Key keys[] = {
 	{ MODKEY,			    XK_0,		view,		{.ui = ~0 } },
 	{ MODKEY|ShiftMask,		XK_0,		tag,		{.ui = ~0 } },
 
-	/* { MODKEY,			XK_Tab,		view,		{0} }, */
+	{ MODKEY,			    XK_Tab,		view,		{0} },
 	{ MODKEY,			    XK_q,		killclient,	{0} },
 	{ MODKEY,			    XK_w,		spawn,		SHCMD("firefox") },
 	{ MODKEY,			    XK_e,		spawn,		SHCMD("caja") },
 	{ MODKEY,			    XK_r,		spawn,		SHCMD("st -e vifmrun") },
-	{ MODKEY|ShiftMask,		XK_r,		spawn,		SHCMD("st -e ytop") },
+	{ MODKEY|ShiftMask,		XK_r,		spawn,		{ .v = ytopcmd } },
 
 	{ MODKEY,			    XK_t,		setlayout,	{.v = &layouts[0]} }, /* tile */
 	{ MODKEY|ShiftMask,		XK_t,		setlayout,	{.v = &layouts[1]} }, /* bstack */
