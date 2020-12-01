@@ -161,7 +161,7 @@ static Key keys[] = {
 	{ MODKEY,			    XK_h,		setmfact,	{.f = -0.05} },
 	{ MODKEY,			    XK_l,		setmfact,   {.f = +0.05} },
 	{ MODKEY,			    XK_n,	    shiftview,	{ .i = 1 } },
-	{ MODKEY|ShiftMask,		XK_l,	    spawn,		SHCMD("i3lock-fancy") },
+	{ MODKEY|ControlMask,	XK_l,	    spawn,		SHCMD("i3lock-fancy") },
 	{ MODKEY|ShiftMask,		XK_n,	    shifttag,	{ .i = 1 } },
 	{ MODKEY,			    XK_Return,	spawn,		{.v = termcmd } },
 	{ MODKEY|ShiftMask,		XK_Return,	zoom,		{0} },
