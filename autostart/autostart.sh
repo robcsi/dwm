@@ -12,3 +12,5 @@ dunst &
 xfce4-power-manager &
 pa-applet &
 blueman-applet &
+dropbox start &
+nitrogen --restore &
